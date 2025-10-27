@@ -67,10 +67,6 @@ pip install -r ..\requirements.txt
 python .\main_gradio.py
 ```
 
-访问 http://127.0.0.1:7860 即可使用!
-
----
-
 ## 💡 功能特性
 
 ### 🎯 核心功能
@@ -149,10 +145,6 @@ d:\ai\
 │   ├── README.md                     # 项目说明（本文件）
 │   ├── 快速开始指南.md
 │   ├── 改进完成报告.md
-│   ├── 其他报告与指南.md ...
-├── memory/                           # 记忆存储
-│   ├── *.json                        # 短期对话历史
-│   └── success_cases/                # 长期成功案例
 └── temp_visualizations/              # 临时可视化文件
   ├── *.html                        # 地图 HTML
   └── *.png                         # 图表图片
@@ -163,7 +155,6 @@ d:\ai\
 ## 📚 文档
 
 - 《[快速开始指南](./快速开始指南.md)》- 详细安装与使用
-- 《[改进完成报告](./改进完成报告.md)》- 技术改进说明
 - 更多文档见 `md_file/` 目录；API 与 Prompt 优化文档待补充
 
 ---
@@ -397,9 +388,9 @@ demo.launch(server_port=7861)
 
 **wjj**
 
-- 项目根目录: d:\ai
-- 邮箱: [您的邮箱]
-- GitHub: [您的GitHub]
+- 项目根目录: .gaode_agent
+- 邮箱: 2089966424@qq.com
+- GitHub: Jianjun Wang passionworkeer
 
 ---
 
@@ -418,7 +409,7 @@ demo.launch(server_port=7861)
 ## 📞 支持
 
 如有问题或建议,请:
-- 📧 发送邮件至: [您的邮箱]
+- 📧 发送邮件至: 2089966424@qq.com
 - 💬 提交Issue: [项目Issue页面]
 - 📖 查看文档: [文档链接]
 
