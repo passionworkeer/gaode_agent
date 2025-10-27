@@ -1,0 +1,89 @@
+# ============================================
+# 智慧旅行Agent系统 - 依赖库清单
+# ============================================
+# 作者: wjj
+# 更新时间: 2025-01
+# Python版本要求: >=3.9, <3.13
+# ============================================
+
+# ---------- 核心框架 ----------
+gradio>=4.0.0                    # Web界面框架
+pydantic>=2.0.0                  # 数据验证
+python-dotenv>=1.0.0             # 环境变量管理
+
+# ---------- LangChain生态 ----------
+langchain>=0.1.0                 # LangChain核心库
+langchain-openai>=0.0.5          # OpenAI兼容接口(通义千问)
+langchain-community>=0.0.20      # 社区工具集
+langchain-mcp-adapters>=0.1.0    # MCP协议适配器
+langchain-huggingface>=0.0.1     # HuggingFace Embeddings
+
+# ---------- 向量数据库与检索 ----------
+faiss-cpu>=1.7.4                 # FAISS向量数据库(CPU版)
+sentence-transformers>=2.2.0     # 句子嵌入模型
+
+# ---------- 网络请求 ----------
+aiohttp>=3.9.0                   # 异步HTTP客户端
+httpx>=0.25.0                    # 现代HTTP客户端
+requests>=2.31.0                 # 传统HTTP库
+python-multipart>=0.0.6          # 文件上传支持
+
+# ---------- 搜索工具 ----------
+tavily-python>=0.3.0             # Tavily搜索API
+
+# ---------- 数据处理 ----------
+pandas>=2.0.0                    # 数据分析
+openpyxl>=3.1.0                  # Excel文件处理
+numpy>=1.24.0                    # 数值计算
+
+# ---------- 可视化生成 ----------
+matplotlib>=3.7.0                # 图表绘制
+seaborn>=0.12.0                  # 统计可视化
+reportlab>=4.0.0                 # PDF生成
+Pillow>=10.0.0                   # 图像处理
+Jinja2>=3.1.0                    # HTML模板引擎
+
+# ---------- 安全与加密 ----------
+pycryptodome>=3.19.0             # 加密算法库
+
+# ---------- 正则表达式增强 ----------
+regex>=2023.10.0                 # 高级正则表达式
+
+# ---------- 日志与调试 ----------
+loguru>=0.7.0                    # 日志增强(可选)
+
+# ---------- 地图服务 ----------
+# 注:高德地图通过MCP协议调用,无需额外依赖
+
+# ============================================
+# 安装说明
+# ============================================
+# 1. 基础安装:
+#    pip install -r requirements.txt
+#
+# 2. GPU加速(可选,用于向量检索加速):
+#    pip uninstall faiss-cpu
+#    pip install faiss-gpu
+#
+# 3. 开发依赖(可选):
+#    pip install pytest black flake8 mypy
+#
+# 4. 环境配置:
+#    - 复制 .env.example 为 .env
+#    - 填入 DASHSCOPE_API_KEY (通义千问)
+#    - 填入 TAVILY_API_KEY (网络搜索)
+#    - 填入 GAODE_API_KEY (高德地图)
+#
+# ============================================
+# 常见问题
+# ============================================
+# Q: 安装faiss-cpu失败?
+# A: 确保Python版本在3.9-3.12之间,或尝试conda install faiss-cpu
+#
+# Q: 安装sentence-transformers慢?
+# A: 使用镜像源: pip install -i https://pypi.tuna.tsinghua.edu.cn/simple sentence-transformers
+#
+# Q: Gradio版本冲突?
+# A: 固定版本: pip install gradio==4.19.0
+#
+# ============================================
